@@ -1,6 +1,6 @@
 # A Dual-branch Convolutional Network Architecture Processing on both Frequency and Time domain for Single-channel Speech Enhancement
 
-This repository provides an implementation of the Dual-Branch Convolutional Network for monaural speech enhancement, developed in ["A Dual-branch Convolutional Network Architecture Processing on both Frequency and Time domain for Single-channel Speech Enhancement"](https://www.isca-speech.org/archive/pdfs/interspeech_2021/zhang21s_interspeech.pdf), Proceedings of Interspeech, pp. 2821-2825, 2021. In the paper, a dual-banch convolutional network was proposed to perform cross-domain processing, which combines time-domain and frequency-domain. 
+This repository provides an implementation of the Dual-Branch Convolutional Network for monaural speech enhancement, developed in ["A Dual-branch Convolutional Network Architecture Processing on both Frequency and Time domain for Single-channel Speech Enhancement"](https://blank), which was submitted to APSIPA transaction. In addition, the network is developed based on the pre-work ["DBNet: A Dual-branch Network Architecture Processing on Spectrum and Waveform for Single-channel Speech Enhancement"](https://www.isca-speech.org/archive/pdfs/interspeech_2021/zhang21s_interspeech.pdf), Interspeech Proceedings, pp. 2821-2825, 2021.Proceedings of Interspeech, pp. 2821-2825, 2021. In this work, a dual-banch convolutional network was proposed to perform cross-domain processing, which combines time-domain and frequency-domain. 
 
 ## Installation
 The program is developed using Python 3.9.
@@ -140,7 +140,7 @@ Take causal DBCN as example:
 }
 ```
 ```
-@article{APASIPA transaction,
+@article{APSIPA transaction,
   to be update
 }
 ```
