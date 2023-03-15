@@ -1,0 +1,49 @@
+# train param
+train_cuda: '0'
+test_cuda: '0'
+num_gpu: 1
+save_all: True
+
+# models
+models:
+  causal: True
+  srate: 16000
+  frame_size: 320
+  frame_shift: 160
+  fft_size: 161
+  lr: 0.001
+  max_epoch: 31
+  eval_epoch: 1
+  grad_value: 25.0
+  scheduler:
+    verbose: True
+
+
+# datasets
+dataset:
+  batch_size: 8
+  num_workers: 8
+  prefetch_factor: 2
+  num_train_sentences: 320000
+  num_eval_sentences: 150
+  speech_len: 64000
+  train_list: '../filelists/train_list.txt'
+  test_list: '../filelists/test_list.txt'
+  assess_list: '../filelists/assess_list.txt'
+  eval_file: '/mnt/raid/user_space/zhangkanghao/data/ns_data/WSJ_TEST_SAMP/test_ADTbabble_snr-5_unseen.samp'
+  test_path: '/mnt/raid/user_space/zhangkanghao/data/ns_data/WSJ_TEST_SAMP/'
+  speech_dir: '/mnt/raid/user_space/zhangkanghao/data/ns_data/WSJ_TRAIN_SAMP/'
+  noise_dir: '/mnt/raid/user_space/zhangkanghao/data/ns_data/Noises/noise_split_100000_h5/'
+  train_snr: [ -5.0, -4.0, -3.0, -2.0, -1.0, -0.0 ]
+
+# output paths
+output:
+  model_path: '../models/'
+  log_path: '../logs/'
+  valiate_path: '../waves/validations/'
+  predict_path: '../waves/predictions/'
+  inference_path: '../waves/inferences/'
+
+# metric
+metric:
+  train_corpus: 'WSJ'
