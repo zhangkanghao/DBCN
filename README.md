@@ -6,7 +6,7 @@ This repository provides an implementation of the Dual-Branch Convolutional Netw
 The program is developed using Python 3.9.
 Clone this repo, and install the dependencies:
 ```
-git clone https://github.com/
+git clone https://github.com/zhangkanghao/DBCN.git
 cd DBCN
 pip install -r requirements.txt
 ```
